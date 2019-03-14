@@ -30,19 +30,19 @@ public class UserMapperTest {
 
     @Test
     public void selectByUserName() throws Exception {
-        User user = userMapper.selectByUserName("周谦");
+        User user = userMapper.selectByUserName("郑托");
         System.out.println(user.toString());
     }
 
     @Test
     public void selectRoleByUserName() throws Exception {
-        Set<String> stringSet=userMapper.selectRoleByUserName("曾令勇");
+        Set<String> stringSet=userMapper.selectRoleByUserName("郑托");
         System.out.println(stringSet);
     }
 
     @Test
     public void selectPermissionsByUserName() throws Exception {
-        Set<String> stringSet=userMapper.selectPermissionsByUserName("曾令勇");
+        Set<String> stringSet=userMapper.selectPermissionsByUserName("郑托");
         System.out.println(stringSet);
     }
 
